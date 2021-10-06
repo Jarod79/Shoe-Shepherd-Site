@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À Propos</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="nav-header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div id="container">
+    <!--Navbar-->
+    <header>
+      <nav>
+          <div id="logo-header">
+              <a href="index.html"> <img class="logo" src="img/logo-shoe.PNG" alt="Logo"></a>
+          </div>
+          <a href="index.html" id="accueil">SHOE SHEPHERD</a>
+          <ul id="menu">
+              <li><a class="link" href="histoire.html">Histoire</a></li>
+              <li><a class="link" href="especes.html">Les Espèces</a></li>
+              <li><a class="link" href="contact.html">A propos</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <!--Content-->
+    <div id="content">
+      <!--4 cards-->
+      <div class="background bg1">
+        <h1 class="title">À PROPOS</h1>
+        <section class="cards">
+            <div class="card micka">
+                <img src="./imgContact/ShoeMicka.jpg" alt="" style="width:100%">
+                <div class="containerCard">
+                  <h4>Micka</h4>
+                  <p>La chaussure de la victoire</p>
+                </div>
+            </div>
+            <div class="card david">
+                <img src="./imgContact/ShoeDavid.jpg" alt="" style="width:100%; height: 75%;">
+                <div class="containerCard">
+                  <h4>David</h4>
+                  <p>Le puma du Pays Basque</p>
+                </div>
+            </div>
+            <div class="card eric">
+                <img src="./imgContact/ShoeEric.jpg" alt="" style="width:100%">
+                <div class="containerCard">
+                  <h4>Eric</h4>
+                  <p>Le globe trotter</p>
+                </div>
+            </div>
+            <div class="card chlea">
+                <img src="./imgContact/ShoeChlea.jpg" alt="" style="width:100%">
+                <div class="containerCard">
+                  <h4>Chlea</h4>
+                  <p>Des DCShoes de compet</p>
+                </div>
+            </div>
+        </section>
+      </div>
+      
+  
+      <!--Line of seperation between the cards and the contact form-->
+      <hr>
+  
+      <!--Form-->
+      <div class="background bg2">
+        <h1 class="title contact">CONTACT</h1>
+  
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+          <label for="firstname">Prénom</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Votre prénom..." required>
+  
+          <label for="lastname">Nom de Famille</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Votre nom de famille..." required>
+
+          <label for="email">Adresse Email</label>
+          <input type="email" itemid="email" name="email" id="email" placeholder="prénom.nom@gmail.com" required>
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Écrivez quelque chose..." style="height:50px"></textarea>
+  
+
+          <button id='submit' value="Submit">Envoyer</button>
+          <div id="confirmation">Votre message a bien été pris en compte. Nous vous remercions.</div>
+        </form>
+      </div>
+      
+    </div>
+  
+    <!--Footer-->
+    <footer>
+      <div id="bottom">
+          <div id="logo-footer"><a href="#container"><img class="logo" src="img/logo-shoe.PNG"
+                      alt="Logo"></a>
+          </div>
+          <article id="copyright">
+              <h5>Copyright © 2021</h5>
+          </article>
+          <div id="right-footer">
+              <a href="https://www.facebook.com/solematelostshoes/" target="blank"><img class="icon"
+                      src="img/IconFacebook.png" alt="Facebook"></a>
+              <a href="https://twitter.com/mache275" target="blank"><img class="icon"
+                      src="img/IconTwitter.png" alt="Twitter"></a>
+              <a href="https://www.instagram.com/shoefiti.project/" target="blank"><img class="icon"
+                      src="img/IconInstagram.png" alt="Instagram"></a>
+          </div>
+      </div>
+  </footer>
+
+    <!--Scroll button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    
+  </div>
+
+  
+
+
+
+  <script src="scrollTop.js"></script>  
+  <script src="script.js" defer></script>
+</body>
+
+</html>
