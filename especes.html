@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especes</title>
+    <!--link pour la mise en forme de la flèche scrolltop-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!--link pour la police d'écriture utilisée-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E%3E">
+    <link rel="stylesheet" href="style-especes.css" />
+    <script defer src='especes.js'></script>
+</head>
+<body>
+    <div class='container-all-especes'>
+        <header>
+            <nav>
+                <div id="logo-header">
+                    <a href="index.html"> <img class="logo" src="imgEspeces/logo-shoe.PNG" alt="Logo"></a>
+                </div>
+                <a href="index.html" id="accueil">SHOE SHEPHERD</a>
+                <ul id="menu">
+                    <li><a class="link" href="histoire.html">Histoire</a></li>
+                    <li><a class="link" href="especes.html">Les Espèces</a></li>
+                    <li><a class="link" href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <div id='content'>
+            <div class= 'container-especes'>
+                <h1>
+                    Les espèces en danger
+                </h1> <br />
+                <div class="casual-text">
+                    <p>Car pour nous toutes les chaussures sont les mêmes, nous nous battons pour qu'elles soient toutes traitées de la même façon, avec respect et bienveillance. Cependant, jour après jour, des milliers de chaussures se retrouvent abandonnées ou torturées dans l'indifférence générale.
+                    Nous avons listé sur cette page les espèces correspondant au danger le plus critique d'extinction.</p>
+                    <br />
+                    <p><strong>Cliquez sur une espèce pour découvrir le contexte tragique de sa situation actuelle.</strong></p>
+                </div>
+                <div class='grid-especes'>
+                    <div id='sneakers' class='esp'>
+                        <div class="overlay">SNEAKERS</div>
+                    </div>
+                    <div id='tongs' class='esp'>
+                        <div class="overlay">TONGS</div>
+                    </div>
+                    <div id='converses' class='esp'>
+                        <div class="overlay">CONVERSES</div>
+                    </div>
+                    <div id='sandales' class='esp'>
+                        <div class="overlay">SANDALES</div>
+                    </div>
+                    <div id='rollers' class='esp'>
+                        <div class="overlay">ROLLERS</div>
+                    </div>
+                    <div id='bottes' class='esp'>
+                        <div class="overlay">BOTTES</div>
+                    </div>
+                </div>
+                <div class="casual-text" id="don">
+                    Si vous souhaitez soutenir notre cause, <a href='contact.html'><strong>contactez-nous</strong></a> afin d'adresser un don ou d'établir un partenariat. Chaque geste compte.
+                </div>
+            </div>
+            <!--Modal div when clicking on an image-->
+            <div id="modal-container">
+                <span id="close-button">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div id="modal-text">
+                    <p id="text-sneakers">
+                        Depuis les années 80 et l'avènement du phénomène hip-hop, les Sneakers sont devenues très populaires auprès des jeunes. 
+                        Un tel engouement a engendré la vente massive de ces chaussures et par conséquent la proportion des actes de cruauté commis envers ces dernières. 
+                        Nombreuses sont les vidéos qui défilent sur les réseaux sociaux où des "artistes" auto-proclamés dessinent au marqueur et au feutre sur les Sneakers pour les personnaliser à leur convenance. Une pratique monstrueuse qu'on peut comparer au test de cosmétiques sur les animaux... 
+                        <br /> Avec la part grandissante des réseaux sociaux au sein de la société cette dernière décennie, les célébrités s'affichent de plus en plus avec ces chaussures, n'hésitant pas à les exposer telles des bêtes de foire au sein de clips musicaux par exemple.
+                        Plus que jamais, les Sneakers ont besoin d'un suivi et d'une revalorisation de leur statut au sein de la chaussuresphère.</p>
+                    <p id="text-tongs">
+                        Les tongs, tongues, slaps, claquettes ou encore gougounes (comme le disent nos confrères québecois). Autant de noms pour désigner ces chaussures estivales
+                        si pratiques pour chiller oklm en bord de plage. Leur coût de production et d'achat peu élevé encourage les gens à les remplacer à la moindre anomalie, voire pire, 
+                        à les utiliser dans des rituels barbares tel que le lancer de tongs dont la France a eu la honte d'accueilir le dernier championnat du monde en date en 2019 : <a href="https://www.sudouest.fr/gironde/hourtin/gironde-le-championnat-du-monde-du-lancer-de-tongs-a-hourtin-en-images-2519701.php"><strong>des images insoutenables...</strong></a>
+                    </p>
+                    <p id="text-converses">
+                        Avec leur modèle phare "Chuck Taylor All Star", les Converses se sont faites une place importante au sein de la société. Prévues à la base pour une utilisation dans le monde du basket-ball,
+                        elles ont été arborées par de nombreuses personnalités, notamment dans le milieu rock. Nous avons tous en tête une connaissance du collège avec des Converses au pied, ou peut-être vous-même en portiez. 
+                        Cette frénésie de jeunesse étant terminée, un nombre incalculable de paires ont fini isolées dans des placards, sans voir la lumière du jour et prenant la poussière. Avec la pratique du Shoefiti, ces chaussures se sont vues affublées d'une nouvelle jeunesse dépravante, condamnées à errer pendues à des fils électriques pendant de nombreuses années et exposées au froid et à la pluie.
+                        <br />Chez SHOE SHEPHERD, nous mettons tout en oeuvre pour déloger ces victimes lors de nos missions. N'hésitez pas à contribuer à la <a href="index.html"><strong>carte Maps des chaussures abandonnées</strong></a> pour que notre équipe ou les bénévoles puissent agir en conséquence. Nous comptons sur vous.
+                    </p>
+                    <p id="text-sandales">
+                        Statut controversé, les sandales sont vues comme une alternative confortable par certains (notamment les pays nordiques) et par une aberration pour d'autres. 
+                        Leur association avec des chaussettes font de ce type de chaussure un sujet de discorde éternel. 
+                        Si nous protégeons toutes les chaussures sans distinction de semelles ou de lacets, nous ne cautionnerons jamais cette utilisation des sandales que nous associons à un manque de respect flagrant envers cette espèce. 
+                        Nous nous battons jour après jour, notamment par le biais d'interventions armées dans les campings français, pour que les touristes d'Europe du Nord cessent cette utilisation monstrueuse de la sandale.
+                    </p>
+                    <p id="text-rollers">
+                        Espèce dont on pourrait penser qu'il n'y a aucun danger. Et pourtant, les rollers sont utilisés à des fins de loisir, souvent par de jeunes enfants. 
+                        Avec des chutes répétées, les rollers se retrouvent affublés de rayures et d'organes qui leur sont arrachés sans aucune pitié. Le pire ? Quand une roue se trouve brisée, certains n'hésitent pas à abandonner leur paire entière au lieu de la réparer. Un véritable scandale écologique.
+                        De nos jours, avec la démocratisation des trottinettes électriques comme moyen de déplacement en milieu urbain, les rollers perdent peu à peu de leur notoriété, avec un risque d'extinction imminent si nous n'agissons pas au plus vite !
+                    </p>
+                    <p id="text-bottes">
+                        Les bottes en caoutchouc sont utilisées pour leur solidité et leur imperméabilité exemplaires. Ces pauvres chaussures se retrouvent de ce fait 90% du temps la semelle noyée dans des flaques d'eau ou couverte de boue. 
+                        Une véritable torture sous forme d'asphyxie pour ces partenaires de pieds qui nous facilitent tant les travaux en extérieur.
+                        De plus, tout comme les tongs, les bottes sont aussi utilisées dans des traditions moyen-âgeuses comme le <a href="https://en.wikipedia.org/wiki/Wellie_wanging"><strong>"Wellie Wanging"</strong></a> : un concours de lancer de bottes qui a fait son apparition en Angleterre dans les années 70 et maintenant popularisé à l'international. N'hésitez pas à nous soutenir pour que nous puissions mener des missions d'intervention à l'étranger pour empêcher ces rassemblements.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div id="bottom">
+                <div id="logo-footer"><a href="#container"><img class="logo" src="imgEspeces/logo-shoe.PNG" alt="Logo"></a>
+                </div>
+                <article id="copyright">
+                    <h5>Copyright © 2021</h5>
+                </article>
+                <div id="right-footer">
+                    <a href="https://www.facebook.com/solematelostshoes/" target="blank"><img class="icon"
+                            src="imgEspeces/IconFacebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/mache275" target="blank"><img class="icon"
+                            src="imgEspeces/IconTwitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/shoefiti.project/" target="blank"><img class="icon"
+                            src="imgEspeces/IconInstagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+        <!--Scroll button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </div>
+</body>
+</html>
