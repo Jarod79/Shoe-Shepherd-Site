@@ -1,255 +1,261 @@
-    body{
-      background-image: url("imgContact/Background-body.png");
-      background-attachment: fixed;
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    /*Background of the div surrounding the cards and the form*/
-    .background {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 3%;
-      border-radius: 10px;
-      margin: 5%;
-    }
-
-    .bg1 {
-      background-position: center;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./imgContact/whereslugo-ad047kyPBh8-unsplash.jpg);
-    }
-    .bg2 {
-      background-position: center;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./imgContact/brock-wegner-w7QElt1PMW4-unsplash.jpg);
-    }
-    .contact, label {
-      color: white;
-    }
-
-    
-  
-    /*Cards*/
-    /* Add shadows and margin*/
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      margin: 5% 8%;
-      background-color: white;
-      border-radius: 10px;
-      padding: 2%;
-    }
-    .containerCard {
-      margin: 3%;
-    }
-    
-    /*hover effect*/
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-  
-    /*grid*/    
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-    }
-  
-    /*Position of each card*/
-    .micka {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
-  
-    .david {
-      grid-column-start: 2;
-      grid-column-end: -1;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
-  
-    .eric {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: -1;
-    }
-  
-    .chlea {
-      grid-column-start: 2;
-      grid-column-end: -1;
-      grid-row-start: 2;
-      grid-row-end: -1;
-    }
-
-
-
-    /*Line of seperation*/
-  
-    hr {
-      margin: 10% 25% 10% 25%;
-      display: block;
-      width: 50%;
-      border-top: 1px solid #f8f8f8f3;
-      border-bottom: 1px solid rgba(0,0,0,0.2);
-    }
-
-
-
-
-    /*Form*/
-    /*flex*/
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: 2% 0;
-    }
-
-    /* Style inputs with type="text" and textareas */
-    input[type=text], textarea, input[type=email] {
-        width: 90%;
-        padding: 12px;
-        margin: 1% 3%;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-      label {
-        margin: 1% 3%;
-      }
-
-    /* Style the submit button*/
-    #submit {
-        background-color: grey;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        width: 6rem;
-        margin-top: 1rem;
-      }
-
-    /* When moving the mouse over the submit button, add a darker color */
-    #submit:hover {
-      background-color: rgb(110, 110, 110);
-    }
-
-    /*Send confirmation message*/
-    #confirmation {
-      display: none;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.8);
-      margin: 2rem;
-      padding: 0.5%;
-    }
-
-
-
-
-
-
-
-    /*Scroll button*/
-    #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 23px;
-      right: 10px;
-      background-color: grey;
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-    }
-    #myBtn:hover {
-      background-color: rgb(110, 110, 110);
-    }
-    .fas {
-      margin: auto;
-      font-size: 150%;
-    }
-
-
-    @media screen and (max-width:768px){
-      /*grid*/    
-      .cards {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-
-
-
-
-
- /*HEADER ET FOOTER*/
-
- *{
-  margin:0;
-  padding:0;
+body{
+  background-image: url("imgContact/Background-body.png");
+  background-attachment: fixed;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
+}
+
+/*Background of the div surrounding the cards and the form*/
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3%;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+.bg1 {
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./imgContact/whereslugo-ad047kyPBh8-unsplash.jpg);
+}
+.bg2 {
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./imgContact/brock-wegner-w7QElt1PMW4-unsplash.jpg);
+}
+.contact, label {
+  color: white;
+}
+
+
+
+/*Cards*/
+/* Add shadows and margin*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 5% 8%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+}
+.containerCard {
+  margin: 3%;
+}
+
+/*hover effect*/
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*grid*/    
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/*Position of each card*/
+.micka {
+  grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.david {
+  grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.eric {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.chlea {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.lydie {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: -1;
+}
+
+
+/*Line of seperation*/
+
+hr {
+  margin: 10% 25% 10% 25%;
+  display: block;
+  width: 50%;
+  border-top: 1px solid #f8f8f8f3;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+
+/*Form*/
+/*flex*/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
+/* Style inputs with type="text" and textareas */
+input[type=text], textarea, input[type=email] {
+    width: 90%;
+    padding: 12px;
+    margin: 1% 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    margin: 1% 3%;
+  }
+
+/* Style the submit button*/
+#submit {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 6rem;
+    margin-top: 1rem;
+  }
+
+/* When moving the mouse over the submit button, add a darker color */
+#submit:hover {
+  background-color: rgb(110, 110, 110);
+}
+
+/*Send confirmation message*/
+#confirmation {
+  display: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2rem;
+  padding: 0.5%;
+}
+
+
+
+
+
+
+
+/*Scroll button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 23px;
+  right: 10px;
+  background-color: grey;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: rgb(110, 110, 110);
+}
+.fas {
+  margin: auto;
+  font-size: 150%;
+}
+
+
+@media screen and (max-width:768px){
+  /*grid*/    
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+/*HEADER ET FOOTER*/
+
+*{
+margin:0;
+padding:0;
+font-family: 'Roboto', sans-serif;
 }
 
 /* Style header */
 /* menu */
 nav{
-  margin: 1% 0%;
-  width: 100%;
-  height: 6vh;
-  display: flex;
-  align-items: center;
-  background-color: rgb(119, 7, 7);
+margin: 1% 0%;
+width: 100%;
+height: 6vh;
+display: flex;
+align-items: center;
+background-color: rgb(119, 7, 7);
 }
 ul{
-  width: 100%;
-  display: flex;
+width: 100%;
+display: flex;
 }
 
 #logo-header{
-  width: 10%;
-  height: 100%;
-  text-align: center;
+width: 10%;
+height: 100%;
+text-align: center;
 }
 /* logo général */
 .logo{
-  width: 60px;
-  height: 60px;
+width: 60px;
+height: 60px;
 }
 
 /*nom a droite du Logo*/
 #accueil{
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 1.3em;
+text-decoration: none;
+font-weight: bolder;
+font-size: 1.3em;
 }
 #accueil:hover{
- text-decoration: underline 2.5px rgb(255, 255, 255); 
+text-decoration: underline 2.5px rgb(255, 255, 255); 
 }
 
 /* Menu haut droite */
 #menu{
-  max-width: 60%;
-  justify-content: space-around;
-  margin-left:20% ;
+max-width: 60%;
+justify-content: space-around;
+margin-left:20% ;
 }
 
 /* retrait du soulignement et de la coloration de base */
 .link{
-  font-size: 1.2em;
+font-size: 1.2em;
 }
 li{
-  list-style-type: none;
+list-style-type: none;
 }
 a{
-  color: aliceblue;
-  text-decoration: none;
+color: aliceblue;
+text-decoration: none;
 }
 a:hover{
-  color: white;
-  text-decoration: underline 2.5px rgb(255, 255, 255); 
+color: white;
+text-decoration: underline 2.5px rgb(255, 255, 255); 
 }
 
 
@@ -257,57 +263,57 @@ a:hover{
 
 /* style du footer */
 #bottom{
-  margin: 5% 0 1% 0;
-  height: 6vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(100, 5, 5);
+margin: 5% 0 1% 0;
+height: 6vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: rgb(100, 5, 5);
 }
 #logo-footer{
-  width: 20%;
-  height: 50px;
-  margin-left: 4%;
-  margin-bottom: 10px;
+width: 20%;
+height: 50px;
+margin-left: 4%;
+margin-bottom: 10px;
 }
 /* text copyright */
 #copyright{
-  width: 60%;
-  text-align:center;
-  color:aliceblue;
-  font-size: 1.4em;
+width: 60%;
+text-align:center;
+color:aliceblue;
+font-size: 1.4em;
 }
 /* taille des icones du footer */
 .icon{
-      width: 40px;
-      height: 40px;
+  width: 40px;
+  height: 40px;
 }
 #right-footer{
-  margin-top: 6px;
-  width: 20%;
-  text-align: center;
+margin-top: 6px;
+width: 20%;
+text-align: center;
 }
 
 /*Scroll button*/
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 15px;
-    background-color: grey;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-  }
-  #myBtn:hover {
-    background-color: rgb(110, 110, 110);
-  }
-  .fas {
-    margin: auto;
-    font-size: 150%;
-  }
+#myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 15px;
+background-color: grey;
+color: white;
+width: 50px;
+height: 50px;
+border-radius: 10px;
+}
+#myBtn:hover {
+background-color: rgb(110, 110, 110);
+}
+.fas {
+margin: auto;
+font-size: 150%;
+}
 
 /* ------------------------------------------------------------version mobile------------------------------------------------------ */
 
@@ -315,104 +321,103 @@ a:hover{
 /* Style header */
 /* menu */
 nav{
-  margin: 1% 0%;
-  width: 100%;
-  height: 3vh;
-  display: flex;
-  align-items: center;
-  background-color: rgb(119, 7, 7);
+margin: 1% 0%;
+width: 100%;
+height: 3vh;
+display: flex;
+align-items: center;
+background-color: rgb(119, 7, 7);
 }
 
 /* logo head */
 #logo-header{
-  width: 10%;
-  height: 100%;
-  text-align: center;
+width: 10%;
+height: 100%;
+text-align: center;
 }
 .logo{
-  width: 25px;
-  height: 25px;
+width: 25px;
+height: 25px;
 }
 
 /*nom a droite du Logo*/
 #accueil{
-  display: none;
+display: none;
 }
 
 /* Menu haut droite */
 #menu{
-  max-width: 100%;
-  justify-content: space-around;
-  margin:auto;
+max-width: 100%;
+justify-content: space-around;
+margin:auto;
 }
 
 /* retrait du soulignement et de la coloration de base */
 .link{
-  font-size: 1em;
+font-size: 1em;
 }
 li{
-  list-style-type: none;
+list-style-type: none;
 }
 a{
-  color: aliceblue;
-  text-decoration: none;
+color: aliceblue;
+text-decoration: none;
 }
 a:hover{
-  color: white;
-  text-decoration: underline 2px rgb(255, 255, 255);
+color: white;
+text-decoration: underline 2px rgb(255, 255, 255);
 }
 
 
 
 /* style du footer */
 #bottom{
-  margin: 3% 0 1% 0;
-  height: 3vh;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  background-color: rgb(119, 7, 7);
+margin: 3% 0 1% 0;
+height: 3vh;
+width: 100%;
+align-items: center;
+display: flex;
+background-color: rgb(119, 7, 7);
 }
 #logo-footer{
-  width: 20%;
-  height: 25px;
-  margin-bottom: 0;
-  text-align: center;
+width: 20%;
+height: 25px;
+margin-bottom: 0;
+text-align: center;
 }
 /* text copyright */
 #copyright{
-  width: 60%;
-  text-align:center;
-  color:aliceblue;
-  font-size: 0.6em;
+width: 60%;
+text-align:center;
+color:aliceblue;
+font-size: 0.6em;
 }
 /* taille des icones du footer */
 .icon{
-  width: 15px;
-  height: 15px;
+width: 15px;
+height: 15px;
 }
 #right-footer{
-  margin-top: 4px;
-  width: 20%;
+margin-top: 4px;
+width: 20%;
 }
 
 /*Scroll button*/
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 0;
-    background-color: grey;
-    color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 10px;
-  }
+#myBtn {
+display: none;
+position: fixed;
+bottom: 30px;
+right: 0;
+background-color: grey;
+color: white;
+width: 25px;
+height: 25px;
+border-radius: 10px;
+}
 
 
 }
-  /*FIN HEADER ET FOOTER*/
+/*FIN HEADER ET FOOTER*/
 
 
 
-  
