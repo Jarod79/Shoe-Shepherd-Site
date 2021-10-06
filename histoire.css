@@ -156,6 +156,7 @@ h2 {
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 5;
+    background-color: rgba(0, 0, 0, 0.486);
     box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     display: flex;
     align-items: center;
@@ -169,11 +170,12 @@ h2 {
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 10;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: 1.5rem;
-    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     border-radius: 10px;
 }
 .thirdCard {
@@ -182,11 +184,12 @@ h2 {
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 10;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
     line-height: 1.5rem;
-    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     border-radius: 10px;
 }
 
@@ -353,11 +356,6 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(13, 1fr);
-}
-
-#iframe{
-    max-width: 100%;
-    max-height: 100%;
 }
  
 .firstCard {
