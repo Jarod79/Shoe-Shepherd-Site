@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajout de la fléche sur le bouton scroll -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <!-- Ajout du lien de la police Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E%3E">
+    <script src="slider.js" defer></script>
+    <title>Accueil</title>
+</head>
+
+<body>
+    <div id="container">
+        <!--Menu navigation et logo -->
+        <header>
+            <nav>
+                <div id="logo-header">
+                    <a href="index.html"> <img class="logo" src="img-accueil/logo-shoe.PNG" alt="Logo"></a>
+                </div>
+                <a href="index.html" id="accueil">SHOE SHEPHERD</a>
+                <ul id="menu">
+                    <li><a class="link" href="histoire.html">Histoire</a></li>
+                    <li><a class="link" href="especes.html">Les Espèces</a></li>
+                    <li><a class="link" href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Partie centrale du site-->
+        <div id="content">
+            <div id="slider">
+                <img src="img-accueil/Carrousel-logo.jpg" alt="s not part of nature" id="slide">
+                <h1 id="affichage-slider"></h1>
+                <div id="precedent" onclick="ChangeSlide(-1)"></div>
+                <div id="suivant" onclick="ChangeSlide(1)"></div>
+            </div>
+            <!--Première section -->
+            <div class="section">
+                <div class="article">
+                    <h1>Notre Mission</h1>
+                    <p><br>
+                        Shoe Shepherd, se bat pour toutes les chaussures sans distinction de marque ou
+                        de style (toutefois nous précisons que le port de chaussettes avec des tongs
+                        mérite la peine capitale).<br>
+                        Nous agissons directement sur le terrain et menons des actions directes pour défendre et
+                        protéger leur habitat naturel dans toutes les villes
+                        autour du globe.
+
+                    </p>
+                </div>
+                <div id="firstsection-img"></div>
+            </div>
+            <!--Deuxième section-->
+            <div class="section">
+                <div id="secondsection-maps"><iframe id="maps"
+                        src="https://www.google.com/maps/d/embed?mid=1ZbvAmbh6GuY6bmjePGd5rjqhIVE"></iframe>
+                    <p id="legende-maps"> *Cette carte recense quelques chaussures perdues en France et en Afrique.
+                    </p>
+                </div>
+                <div class="article">
+                    <h1>Le saviez-vous ?</h1>
+                    <p>Neuf paires de chaussures sont jetées chaque minute en France.</p>
+                    <p> Il est en effet possible de valoriser vos vieilles chaussures. Le premier réflexe : le
+                        point Relais, qui dispose de plusieurs milliers de points de collecte en France. Si vos
+                        chaussures sont en très bon état, elles seront revendues dans un point de vente de l'entreprise
+                        participative pour une somme modique et feront le bonheur d'un acheteur. Si elles sont en assez
+                        bon état, elles seront envoyées en Afrique pour être également vendues.
+                    </p> <br>
+                    <a
+                        href="https://www.ledauphine.com/societe/2021/03/26/gaspillage-9-paires-de-chaussures-sont-jetees-chaque-minute-en-france#:~:text=Le%20d%C3%A9fi%20du%20recyclage%20de%20chaussures&text=Il%20est%20en%20effet%20possible,points%20de%20collecte%20en%20France.&text=Seuls%2015%20%C3%A0%2020%25%20de,pour%20fabriquer%20de%20nouvelles%20chaussures.">Source:
+                        Le Dauphiné</a>
+                </div>
+            </div>
+            <!--Pied de page -->
+            <footer>
+                <div id="bottom">
+                    <div id="logo-footer"><a href="" onclick="topFunction()"><img class="logo"
+                                src="img-accueil/logo-shoe.PNG" alt="Logo"></a>
+                    </div>
+                    <article id="copyright">
+                        <h5>Copyright © 2021</h5>
+                    </article>
+                    <div id="right-footer">
+                        <a href="https://www.facebook.com/solematelostshoes/" target="blank"><img class="icon"
+                                src="img-accueil/IconFacebook.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/mache275" target="blank"><img class="icon"
+                                src="img-accueil/IconTwitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/shoefiti.project/" target="blank"><img class="icon"
+                                src="img-accueil/IconInstagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </footer>
+            <!--Scroll button-->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+        </div>
+    </div>
+</body>
+
+</html>

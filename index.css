@@ -1,0 +1,426 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url("img-accueil/Background-bodydark.png");
+    background-attachment: fixed;
+}
+
+/* Style header */
+/* menu */
+nav{
+    margin: 1% 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 7, 7);
+}
+ul{
+    width: 100%;
+    display: flex;
+}
+
+#logo-header{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+/* logo général */
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+/*nom a droite du Logo*/
+#accueil{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+#accueil:hover{
+   text-decoration: underline 2.5px rgb(255, 255, 255); 
+}
+
+/* Menu haut droite */
+#menu{
+    max-width: 60%;
+    justify-content: space-around;
+    margin-left:20% ;
+}
+
+/* retrait du soulignement et de la coloration de base */
+.link{
+    font-size: 1.2em;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline 2.5px rgb(255, 255, 255); 
+}
+
+/* sliders */
+#slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    }
+#slide{
+    width: 100%;
+}
+/* Titre sur le slider */
+#affichage-slider{
+    position: absolute;
+    font-size: 5vw;
+    color: rgb(131, 7, 7);
+    box-shadow:red 0px 0px 20px 0px;
+}
+ 
+
+
+/* gestion de l'affichage des fleche gauche et droite du slider*/
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+/* taille et position des fleche gauche et droite du slider*/
+#precedent {
+    left: 0;
+    width: 2vw;
+    height: 10vh;
+    top: 40vh
+}
+#suivant {
+    right: 0;
+    width: 2%;
+    height: 10vh;
+    top: 40vh
+}
+
+/* Affichage des fléches au passage de la souris*/
+#slider:hover #precedent{
+    opacity: 1;
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("img-accueil/fleche-gauche.png");
+}
+#slider:hover #suivant {
+    opacity: 1;
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("img-accueil/fleche-droite.png");
+}
+
+/* contenu centrale */
+#content{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Première et Deuxième section  article*/
+.section{
+    border-radius: 10px;
+    margin: 5% 5% 0% 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
+}
+
+/* Modifie les articles de toute la pages */
+.article{
+    line-height: 1.5rem;
+    text-align: center;
+    color: white;
+    width: 35%;
+}
+.article h1{
+    margin-bottom: 3%;
+    height: 6vh;
+    text-align: center;
+}
+p{
+    font-size: 1.2em;
+}
+
+/* Première section Photo */
+#firstsection-img{
+    width: 35%;
+    height: 30vh;
+    margin: 5% 0;
+    border-radius: 10px;
+    background-size: 40vw 30vh;
+    background-image: url('img-accueil/firstSection.jpg');
+}
+/* Deuxième section carte */
+#secondsection-maps{
+    position: relative;
+    margin: 5% 0;
+    width: 35%;
+    height: 30vh;
+}
+/* Carte */
+#maps{
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+}
+#legende-maps{
+    color: white;
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+
+
+/* style du footer */
+#bottom{
+    margin: 5% 0 1% 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(100, 5, 5);
+}
+#logo-footer{
+    width: 20%;
+    height: 50px;
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+/* text copyright */
+#copyright{
+    width: 60%;
+    text-align:center;
+    color:aliceblue;
+    font-size: 1.4em;
+}
+/* taille des icones du footer */
+.icon{
+        width: 40px;
+        height: 40px;
+}
+#right-footer{
+    width: 20%;
+    text-align: center;
+}
+
+/*Scroll button*/
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      background-color: grey;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+    }
+    #myBtn:hover {
+      background-color: rgb(110, 110, 110);
+    }
+    .fas {
+      margin: auto;
+      font-size: 150%;
+    }
+
+/* ------------------------------------------------------------version mobile------------------------------------------------------ */
+
+@media screen and (max-width:768px){
+/* Style header */
+/* menu */
+nav{
+    margin: 1% 0%;
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 7, 7);
+}
+
+/* logo head */
+#logo-header{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+.logo{
+    width: 25px;
+    height: 25px;
+}
+
+/*nom a droite du Logo*/
+#accueil{
+    display: none;
+}
+
+/* Menu haut droite */
+#menu{
+    max-width: 100%;
+    justify-content: space-around;
+    margin:auto;
+}
+
+/* retrait du soulignement et de la coloration de base */
+.link{
+    font-size: 1em;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline 2px rgb(255, 255, 255);
+}
+
+/* sliders */
+#slider {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    }
+/* taille et position des fleche gauche et droite du slider*/
+#precedent {
+    left: 0;
+    width: 2%;
+    height: 3vh;
+    top: 12vh
+}
+#suivant {
+    right: 0;
+    width: 2%;
+    height: 3vh;
+    top: 12vh
+}
+
+/* Première et Deuxième section  article*/
+.section{
+    margin: 5% auto;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px -10px;
+}
+
+/* Modifie les articles de toute la pages */
+.article{
+    line-height: 1.1rem;
+    color: white;
+    width: 85%;
+    text-align: center;
+}
+.article a{
+    font-size: 0.8em;
+}
+.article h1{
+    margin-top: 10%;
+    height: 3vh;
+    text-align: center;
+    font-size:1.5em;
+}
+p{
+    font-size: 0.8em;
+}
+
+/* Première section Photo */
+#firstsection-img{
+    width: 80vw;
+    height: 25vh;
+    margin: 5% 5%;
+    border-radius: 10px;
+    background-size: 80vw 30vh;
+    background-image: url('img-accueil/firstSection.jpg');
+}
+/* Deuxième section carte */
+#secondsection-maps{
+    order :1;
+    border-radius: 10px;
+    width: 80vw;
+    height: 25vh;
+}
+/* Carte */
+#maps{
+    border-radius: 10px;
+    width: 100%;
+    height: 25vh;
+}
+
+/* style du footer */
+#bottom{
+    margin: 3% 0 1% 0;
+    height: 3vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: rgb(119, 7, 7);
+}
+#logo-footer{
+    width: 20%;
+    height: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+/* text copyright */
+#copyright{
+    width: 60%;
+    text-align:center;
+    color:aliceblue;
+    font-size: 0.6em;
+}
+/* taille des icones du footer */
+.icon{
+    width: 15px;
+    height: 15px;
+}
+#right-footer{
+    margin-top: 4px;
+    width: 20%;
+}
+
+/*Scroll button*/
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 0;
+      background-color: grey;
+      color: white;
+      width: 25px;
+      height: 25px;
+      border-radius: 10px;
+    }
+ 
+  
+}
+
+
