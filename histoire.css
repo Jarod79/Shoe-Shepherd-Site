@@ -209,6 +209,8 @@ p {
 .p2 {
     overflow: auto;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .p2 p {
     margin: auto;
@@ -217,6 +219,8 @@ p {
 .p3{
     overflow: auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .p3 p {
     margin: auto;
@@ -364,11 +368,12 @@ a:hover{
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: 5;
+    background-color: rgba(0, 0, 0, 0.486);
     box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     display: flex;
     align-items: center;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     border-radius: 10px;
 } 
 
@@ -378,9 +383,10 @@ a:hover{
     grid-column-end: -1;
     grid-row-start: 6;
     grid-row-end: 9;
+    background-color: rgba(0, 0, 0, 0.486);
     box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     text-align: center;
-    line-height: 1rem;
+    line-height: 1.5rem;
     border-radius: 10px;
 }
 
@@ -390,12 +396,13 @@ a:hover{
     grid-column-end: -1;
     grid-row-start: 10;
     grid-row-end: 13;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     text-align: center;
     line-height: 1.5rem;
-    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
     border-radius: 10px;
 }
 /* Images et text */
@@ -407,6 +414,9 @@ a:hover{
 h1 {
     color: aliceblue;
     text-align: center;
+}
+h2 {
+    margin: .5rem;
 }
 
 #iframe {
@@ -421,8 +431,8 @@ p {
     margin: auto;
 }
 .p1 p {
-    margin: auto;
-    width: 80%;
+    margin-top: 15px;
+    width: 90%;
 }
 .p2 {
     overflow: auto;
@@ -430,15 +440,16 @@ p {
 }
 .p2 p {
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 .p3{
     overflow: auto;
     height: 100%;
+    margin-top: 15px;
 }
 .p3 p {
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 .image1{
