@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url("img-header-footer/Background-body.png");
+    background-attachment: fixed;
+}
+
+/* Style header */
+/* menu */
+nav{
+    margin: 1% 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 7, 7);
+}
+ul{
+    width: 100%;
+    display: flex;
+}
+
+#logo-header{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+/* logo général */
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+/*nom a droite du Logo*/
+#accueil{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+#accueil:hover{
+   text-decoration: underline 2.5px rgb(255, 255, 255); 
+}
+
+/* Menu haut droite */
+#menu{
+    max-width: 60%;
+    justify-content: space-around;
+    margin-left:20% ;
+}
+
+/* retrait du soulignement et de la coloration de base */
+.link{
+    font-size: 1.2em;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline 2.5px rgb(255, 255, 255); 
+}
+
+
+
+
+/* style du footer */
+#bottom{
+    margin: 5% 0 1% 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(100, 5, 5);
+}
+#logo-footer{
+    width: 20%;
+    height: 50px;
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+/* text copyright */
+#copyright{
+    width: 60%;
+    text-align:center;
+    color:aliceblue;
+    font-size: 1.4em;
+}
+/* taille des icones du footer */
+.icon{
+        width: 40px;
+        height: 40px;
+}
+#right-footer{
+    margin-top: 6px;
+    width: 20%;
+    text-align: center;
+}
+
+/*Scroll button*/
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      background-color: grey;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+    }
+    #myBtn:hover {
+      background-color: rgb(110, 110, 110);
+    }
+    .fas {
+      margin: auto;
+      font-size: 150%;
+    }
+
+/* ------------------------------------------------------------version mobile------------------------------------------------------ */
+
+@media screen and (max-width:768px){
+/* Style header */
+/* menu */
+nav{
+    margin: 1% 0%;
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 7, 7);
+}
+
+/* logo head */
+#logo-header{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+.logo{
+    width: 25px;
+    height: 25px;
+}
+
+/*nom a droite du Logo*/
+#accueil{
+    display: none;
+}
+
+/* Menu haut droite */
+#menu{
+    max-width: 100%;
+    justify-content: space-around;
+    margin:auto;
+}
+
+/* retrait du soulignement et de la coloration de base */
+.link{
+    font-size: 1em;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline 2px rgb(255, 255, 255);
+}
+
+
+
+/* style du footer */
+#bottom{
+    margin: 3% 0 1% 0;
+    height: 3vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: rgb(119, 7, 7);
+}
+#logo-footer{
+    width: 20%;
+    height: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+/* text copyright */
+#copyright{
+    width: 60%;
+    text-align:center;
+    color:aliceblue;
+    font-size: 0.6em;
+}
+/* taille des icones du footer */
+.icon{
+    width: 15px;
+    height: 15px;
+}
+#right-footer{
+    margin-top: 4px;
+    width: 20%;
+}
+
+/*Scroll button*/
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 0;
+      background-color: grey;
+      color: white;
+      width: 25px;
+      height: 25px;
+      border-radius: 10px;
+    }
+ 
+  
+}
+
+
