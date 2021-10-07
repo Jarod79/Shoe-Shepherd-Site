@@ -8,6 +8,8 @@ body {
     background-attachment: fixed;
 }
 
+    
+
 /* Style header */
 /* menu */
 nav{
@@ -427,7 +429,7 @@ p{
 }
 
 /* ------------------------------------------------version paysage--------------------------------------------------------- */
-@media (orientation:landscape){
+@media (orientation:landscape) and (max-height:400px){
 /* Style header */
 /* menu */
 nav{
