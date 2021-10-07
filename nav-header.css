@@ -227,7 +227,7 @@ a:hover{
 }
 
 /* ------------------------------------------------version paysage--------------------------------------------------------- */
-@media (orientation:landscape){
+@media (orientation:landscape) and (max-height:400px){
 /* Style header */
 /* menu */
 nav{
