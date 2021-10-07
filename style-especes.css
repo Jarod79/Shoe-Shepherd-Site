@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {   
+    background-image: url("imgEspeces/Background-body.png");
+    background-attachment: fixed;
+}
+/* --------------------------------- I. DESKTOP VERSION -----------------------------------------*/
+/* I.1. Header-Nav */
+nav{
+    margin: 1% 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 7, 7);
+}
+ul{
+    width: 100%;
+    display: flex;
+}
+
+#logo-header{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+#accueil /*nom a droite du Logo*/{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+#accueil:hover{
+   text-decoration: underline 2.5px rgb(255, 255, 255); 
+}
+
+
+#menu /* Menu haut droite */{
+    max-width: 60%;
+    justify-content: space-around;
+    margin-left:20% ;
+}
+
+/* retrait du soulignement et de la coloration de base */
+.link{
+    font-size: 1.2em;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline 2.5px rgb(255, 255, 255); 
+}
+
+/* I.2. Footer */
+#bottom{
+    margin: 5% 0 1% 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(100, 5, 5);
+}
+#logo-footer{
+    width: 20%;
+    height: 50px;
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+#copyright{
+    width: 60%;
+    text-align:center;
+    color:aliceblue;
+    font-size: 1.4em;
+}
+/* taille des icones du footer */
+.icon{
+    width: 40px;
+    height: 40px;
+}
+#right-footer{
+    margin-top: 6px;
+    width: 20%;
+    text-align: center;
+}
+
+/* I.3. Scroll button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    background-color: grey;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+#myBtn:hover {
+    background-color: rgb(110, 110, 110);
+}
+.fas {
+    margin: auto;
+    font-size: 150%;
+}
+/* I.4. Content */
+#content {
+    color: aliceblue;
+}
+#content h1 {
+    text-align: center;
+}
+.casual-text {
+    text-align: justify;
+    margin-left: 2%;
+    width: 95%;
+    line-height: 1.5rem;
+}
+#don {
+    text-align: center;
+}
+/*Organisation du grid et ses éléments*/
+.grid-especes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 80vw;
+}
+#sneakers {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(imgEspeces/especes-sneakers.jpg);
+    background-size: 100% 100%;
+}
+#tongs {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    background-image: url(imgEspeces/especes-tongs.jpg);
+    background-size: cover;
+    background-position: center top 20%;
+}
+#converses {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(imgEspeces/especes-converses.jpg);
+    background-size: 100% 100%;
+}
+#sandales {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(imgEspeces/especes-sandales.jpg);
+    background-size: cover;
+}
+#rollers {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: -1;
+    background-image: url(imgEspeces/especes-rollers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#bottes {
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-image: url(imgEspeces/especes-bottes.jpg);
+    background-size: cover;
+    background-position: center bottom 30%;
+}
+
+/*Overlay sur chaque photo avec le nom qui apparaît quand on hover*/
+.esp {
+    position: relative;
+    margin: 3vh 2vw;
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px -5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100%;
+    bottom: 0%;
+    text-align: center;
+    padding: 1rem 0px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: 0.6s ease;
+    font-size: 1.2rem;
+}
+.esp:hover .overlay {
+    opacity: 1;
+}
+/*Propriétés du modal après avoir cliqué sur une photo*/
+#modal-container {
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+}
+#close-button {
+    font-size: 3rem;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transition: 0.2s;
+}
+#close-button:hover {
+    color:rgb(119, 7, 7);
+    font-size: 4rem;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+#modal-text {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    padding: 1rem;
+    background-color: rgba(119, 7, 7, 0.2);
+    border-radius: 10px;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+#modal-title {
+    text-align: center;
+    padding-top: 2rem;
+}
+/* --------------------------------- II. RESPONSIVE VERSION -----------------------------------------*/
+@media screen and (max-width:768px){
+    /* II.1. Responsive Header-Nav */
+    nav{
+        margin: 1% 0%;
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        background-color: rgb(119, 7, 7);
+    }
+
+    /* logo head */
+    #logo-header{
+        width: 10%;
+        height: 100%;
+        text-align: center;
+    }
+    .logo{
+        width: 25px;
+        height: 25px;
+    }
+
+    /*nom a droite du Logo*/
+    #accueil{
+        display: none;
+    }
+
+    /* Menu haut droite */
+    #menu{
+        max-width: 100%;
+        justify-content: space-around;
+        margin:auto;
+    }
+
+    /* retrait du soulignement et de la coloration de base */
+    .link{
+        font-size: 1em;
+    }
+    li{
+        list-style-type: none;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+        text-decoration: underline 2px rgb(255, 255, 255);
+    }
+
+
+
+    /* II.2. Responsive Footer */
+    #bottom{
+        margin: 3% 0 1% 0;
+        height: 3vh;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        background-color: rgb(119, 7, 7);
+    }
+    #logo-footer{
+        width: 20%;
+        height: 25px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    /* text copyright */
+    #copyright{
+        width: 60%;
+        text-align:center;
+        color:aliceblue;
+        font-size: 0.6em;
+    }
+    /* taille des icones du footer */
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+    #right-footer{
+        margin-top: 4px;
+        width: 20%;
+    }
+
+    /* II.3. Responsive Scroll button */
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 0;
+        background-color: grey;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+    /* II.4. Responsive Content */
+    #content {
+        width: 100vw;
+        font-size: 0.8rem;
+    }
+    #content h1 {
+        font-size: 1.5em;
+        margin-top: 1rem;
+    }
+    .casual-text {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        line-height: 1.1rem;
+    }
+    /*Organisation des espèces de chaussures*/
+    .grid-especes {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .esp {
+        width: 80vw;
+        height: 50vw;
+        margin: 3% auto;
+        box-shadow: rgb(255, 255, 255) 0px 0px 20px -10px;
+    }
+    #sneakers {
+        background-size: cover;
+        background-position: center bottom 20%;
+    }
+    #converses {
+        background-size: cover;
+        background-position: center bottom 40%;
+    }
+    #sandales {
+        background-size: cover;
+        background-position: center;
+    }
+    #bottes {
+        background-size: cover;
+        background-position: center bottom 20%;
+    }
+    .overlay {
+        opacity: 0.9;
+        bottom: 25%;
+        border-radius: 0;
+        font-size: 1rem;
+    }
+    /*Propriétés du modal*/
+    #close-button {
+        color:rgb(119, 7, 7);
+        top: 1%;
+    }
+    #modal-text {
+        text-align: center;
+        line-height: 1.1rem;
+        width: 75%;
+    }
+    strong {
+        color:rgb(159, 47, 47);
+    }
+}
