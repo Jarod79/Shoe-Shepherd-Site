@@ -1,29 +1,37 @@
 //Array contenant les images et les titre du slider.
-const slide = ["img-accueil/Carrousel-logo.jpg", "img-accueil/carrousel1.png", "img-accueil/carrousel2.jpg", "img-accueil/carrousel3.jpeg", "img-accueil/Carrousel-logo.jpg"];
+const imgSlide = document.getElementById('slider');
+const slideImg = ["img-accueil/Carrousel-logo.jpg", "img-accueil/carrousel1.png", "img-accueil/carrousel2.jpg", "img-accueil/carrousel3.jpeg", "img-accueil/Carrousel-logo.jpg"];
 const title = [" ", "DEFEND", "CONSERVE", "PROTECT", " "];
-const titleH1 = document.getElementById(`affichage-slider`);
+
+//Création of title to slider impression
+const titleSlider = document.createElement('h1');
+titleSlider.classList.add('affichage-slider');
+imgSlide.appendChild(titleSlider);
+
+
+
 
 let numero = 0;
 //Affiche les images du tableaux
 const ChangeSlide = (sens) => {
     numero = numero + sens;
-    (numero < 0) ? numero = slide.length - 1 :
-        (numero > slide.length - 1) ? numero = 0 :
+    (numero < 0) ? numero = slideImg.length - 1 :
+        (numero > slideImg.length - 1) ? numero = 0 :
 
-            document.getElementById("slide").src = slide[numero];
-    titleH1.innerHTML = title[numero];
+            document.getElementById('slide').src = slideImg[numero];
+    titleSlider.innerHTML = title[numero];
     switch (title[numero]) {
         case (title[1]):
-            titleH1.style.left = "5%";
-            titleH1.style.top = "10%";
+            titleSlider.style.left = "5%";
+            titleSlider.style.top = "10%";
             break;
         case (title[2]):
-            titleH1.style.left = "35%";
-            titleH1.style.top = "85%";
+            titleSlider.style.left = "35%";
+            titleSlider.style.top = "85%";
             break;
         case (title[3]):
-            titleH1.style.left = "70%";
-            titleH1.style.top = "10%";
+            titleSlider.style.left = "70%";
+            titleSlider.style.top = "10%";
             break;
         default:
             break;

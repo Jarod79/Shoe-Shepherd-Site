@@ -80,7 +80,7 @@ a:hover{
     width: 100%;
 }
 /* Titre sur le slider */
-#affichage-slider{
+.affichage-slider{
     position: absolute;
     font-size: 5vw;
     color: rgb(131, 7, 7);
