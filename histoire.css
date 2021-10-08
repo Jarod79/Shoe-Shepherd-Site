@@ -244,7 +244,7 @@ p {
     height: 50%;
 }
 /*Style liens*/
-#stop{
+.stop{
     text-shadow:0 0 3px #FE0000, 0 0 10px #FE0000, 0 0 20px #FE0000;color:#FE0000;
 }
 #lien{
